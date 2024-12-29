@@ -6,7 +6,7 @@ class Solution {
         int count =1;
         int prev=0;
         for(int i=1;i<n;i++){
-            if(intervals[i][0]>=intervals[prev][1]){
+            if(intervals[i][0]>intervals[prev][1]){
                 count++;
                 prev=i;
             }
